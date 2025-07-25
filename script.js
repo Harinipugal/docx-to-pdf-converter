@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // !!! IMPORTANT: This URL MUST BE REPLACED with your deployed Render backend URL !!!
             // Example: "https://your-nodejs-backend.onrender.com/convert"
-            const backendUrl = "http://localhost:5000/convert"; 
+            const backendUrl = "https://docx-to-pdf-converter-backend-nre5.onrender.com/convert"; 
 
             const response = await fetch(backendUrl, {
                 method: "POST",
