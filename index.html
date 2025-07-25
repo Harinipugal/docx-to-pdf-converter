@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocFlow Converter</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Fonts for a modern font (e.g., Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/337/337946.png" type="image/png">
+</head>
+<body>
+    <div class="container-wrapper">
+        <div class="converter-card">
+            <h1 class="card-title">DocFlow Converter</h1>
+            <p class="card-subtitle">Effortlessly transform your documents.</p>
+
+            <div class="file-upload-area">
+                <input type="file" id="fileInput" accept=".docx" class="hidden-file-input">
+                <label for="fileInput" class="upload-button">
+                    <i class="fas fa-upload icon-left"></i> Choose DOCX File
+                </label>
+                <span id="fileNameDisplay" class="file-name-display">No file chosen</span>
+            </div>
+
+            <div class="conversion-actions">
+                <button id="convertDocxToPdfBtn" class="action-button primary-button" disabled>
+                    <i class="fas fa-file-pdf icon-left"></i> Convert to PDF
+                </button>
+               
+            </div>
+
+            <div id="statusMessage" class="status-area"></div>
+            
+            <a id="downloadLink" class="download-link hidden">
+                <i class="fas fa-download icon-left"></i> Download Converted File
+            </a>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+
+# Temporary directories for the app
+uploads/
+converted/
+
+# IDE specific files
+.vscode/
+.idea/
